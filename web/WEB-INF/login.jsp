@@ -13,6 +13,6 @@
             password: <input type="password" name="password"><br>
             <input type="submit" value="Sign in">
         </form>
-        <a href="/forgot">Forgot Password</a>
+        <a href="forgot">Forgot Password</a>
     </body>
 </html>

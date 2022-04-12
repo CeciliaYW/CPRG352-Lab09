@@ -2,7 +2,6 @@
 package servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -35,7 +34,7 @@ public class ForgotPasswordServlet extends HttpServlet {
         
         
         HttpSession session = request.getSession();
-        session.setAttribute("message", true);
+        session.setAttribute("message", "If the address you entered is valid, you will receive an email very soon.");
         
         getServletContext().getRequestDispatcher("/WEB-INF/forgot.jsp").forward(request, response);
         

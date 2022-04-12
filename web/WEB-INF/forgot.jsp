@@ -4,7 +4,7 @@
     Author     : ceci_
 --%>
 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -19,8 +19,9 @@
         <p>Email Address: <input type="text" name="email" value="${email}"><br></p>
         <input type="submit" value="Submit">
         </form>
-        <c:if test="${message}">
+<!--        <c:if test="${message}">
             <p>If the address you entered is valid, you will receive an email very soon.</p>
-        </c:if>
+        </c:if>-->
+        <p>${message}</p>
     </body>
 </html>

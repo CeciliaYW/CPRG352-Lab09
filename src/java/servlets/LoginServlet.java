@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
         
         AccountService as = new AccountService();
         String path = getServletContext().getRealPath("/WEB-INF");
-        User user = as.login(email, password, path);
+        User user = as.login(email, password);
         
         if (user == null) {
             request.setAttribute("email", email);
